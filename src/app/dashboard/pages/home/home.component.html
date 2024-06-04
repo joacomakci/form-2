@@ -1,1 +1,9 @@
-<p>home works!</p>
+<app-user-form></app-user-form>
+
+<h2 class="mt-4">Lista de Usuarios</h2>
+<ul class="list-group mt-3">
+  <li class="list-group-item" *ngFor="let user of users">
+    <strong>{{ user.name }}</strong> ({{ user.email }})<br />
+    <small>Tel: {{ user.phone }}, Dirección: {{ user.address }}</small>
+  </li>
+</ul>

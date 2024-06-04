@@ -22,6 +22,7 @@ import { HomeComponent } from './dashboard/pages/home/home.component';
 import { ProfileComponent } from './dashboard/pages/profile/profile.component';
 import { AboutComponent } from './dashboard/pages/about/about.component';
 import { AyudaComponent } from './dashboard/pages/ayuda/ayuda.component';
+import { UserFormComponent } from './components/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { AyudaComponent } from './dashboard/pages/ayuda/ayuda.component';
     ProfileComponent,
     AboutComponent,
     AyudaComponent,
+    UserFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,7 @@ import { AyudaComponent } from './dashboard/pages/ayuda/ayuda.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    FormsModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

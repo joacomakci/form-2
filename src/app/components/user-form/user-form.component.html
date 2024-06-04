@@ -1,0 +1,29 @@
+<form
+  (ngSubmit)="onSubmit()"
+  #userForm="ngForm"
+  class="needs-validation"
+  novalidate
+>
+  <div class="form-group" *ngFor="let field of fields">
+    <label [for]="field.name">{{ field.label }}</label>
+    <input
+      class="form-control"
+      [type]="field.type"
+      [id]="field.name"
+      [(ngModel)]="user[field.name]"
+      [name]="field.name"
+      [required]="field.required"
+      #{{field.name}}="ngModel"
+    />
+    <div class="invalid-feedback" *ngIf="field.required">
+      Este campo es requerido.
+    </div>
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary mt-2"
+    [disabled]="!userForm.form.valid"
+  >
+    Agregar Usuario
+  </button>
+</form>
