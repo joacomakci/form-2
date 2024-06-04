@@ -1,0 +1,52 @@
+/* login.component.css */
+.login-background {
+  background-image: url("https://png.pngtree.com/background/20230611/original/pngtree-cannabis-plants-grow-on-a-black-background-picture-image_3123148.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: opacity(0.95);
+}
+
+.container-fluid {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: rgba(11, 10, 10, 0.082);
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem green);
+}
+.card-body {
+  padding: 2rem;
+}
+.card-title {
+  color: #fff;
+}
+.card-footer {
+  background: none;
+  border-top: none;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #fff;
+}
+
+p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.btn {
+  background-color: transparent;
+}
+.form-label {
+  color: #fff;
+}
+#email {
+  background-color: transparent;
+}
