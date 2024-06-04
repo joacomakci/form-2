@@ -41,4 +41,9 @@ export class SidebarComponent {
         }
       });
   }
+  menuItems = [
+    { name: 'Home', link: '/dashboard/home', icon: 'home' },
+    { name: 'profile', link: '/dashboard/profile', icon: 'person' },
+    { name: 'About', link: '/dashboard/about', icon: 'info' },
+  ];
 }
