@@ -23,6 +23,9 @@ import { ProfileComponent } from './dashboard/pages/profile/profile.component';
 import { AboutComponent } from './dashboard/pages/about/about.component';
 import { AyudaComponent } from './dashboard/pages/ayuda/ayuda.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
+import { ArticleListComponent } from './components/article-list/article-list.component';
+import { ArticleFormComponent } from './components/article-form/article-form.component';
+import { QuillModule } from 'ngx-quill';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,8 @@ import { UserFormComponent } from './components/user-form/user-form.component';
     AboutComponent,
     AyudaComponent,
     UserFormComponent,
+    ArticleListComponent,
+    ArticleFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,7 @@ import { UserFormComponent } from './components/user-form/user-form.component';
     MatIconModule,
     MatDividerModule,
     FormsModule,
+    QuillModule.forRoot(),
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
